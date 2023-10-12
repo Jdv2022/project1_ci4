@@ -34,7 +34,7 @@ $routes->options('/delete', 'CORSController::handleOptions');
 
 //MESSAGES
 $routes->get('/index', 'Messages::index');
-$routes->post('/admin', 'Messages::create');
+$routes->post('/logmessages', 'Messages::create');
 $routes->post('/messages', 'Messages::getAll');
 $routes->delete('/delete', 'Messages::deleteAdmin');
 $routes->post('/session', 'Messages::sessionG');
@@ -44,8 +44,8 @@ $routes->put('/update', 'Messages::update');
 $routes->post('/create-bug', 'Bugs::create');
 
 //ADMINS
-$routes->post('/admin/login', 'Admins::adminLogin');
-$routes->post('/admin/logout', 'Admins::adminLogout');
+/* $routes->post('/admin/login', 'Admins::adminLogin');
+$routes->post('/admin/logout', 'Admins::adminLogout'); */
 
 //TRAFFIC
 $routes->post('/logtraffic', 'Traffics::log');
